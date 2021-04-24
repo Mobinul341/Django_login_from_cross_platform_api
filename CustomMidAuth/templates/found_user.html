@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <a href="{% url 'form' %}" class="btn btn-info">Form Again</a>
+    <div class="row">
+        <div class="container">       
+        <h3>Welcome {{ user_success }}</h3>
+            &nbsp; &nbsp;
+        <h4>You're an active Lucid User:  {{ module }}</h4>
+    </div>
+
+    </div>
+</div>
+
+{% endblock %}
